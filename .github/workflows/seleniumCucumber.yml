@@ -1,4 +1,4 @@
-name: Cypress Tests
+name: Selenium Cucumber Tests
 
 on: push
 
@@ -18,11 +18,11 @@ jobs:
         run: npm install
 
       - name: Run Tests
-        run: npm run:test:cucumber
+        run: npm run run:test:cucumber
 
       - name: generate report
         if: ${{always()}}
-        run: npm generate:MultipleHtml:report
+        run: npm run generate:MultipleHtml:report
 
         
       - name: Deploy report page
