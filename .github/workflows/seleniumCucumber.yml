@@ -1,6 +1,10 @@
 name: Selenium Cucumber Tests
 
 on:
+  push:
+    branches:
+      - main
+      
   workflow_dispatch:
     inputs:
       browser:
