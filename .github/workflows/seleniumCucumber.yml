@@ -1,0 +1,36 @@
+name: Cypress Tests
+
+on: push
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Use a versão adequada do Node.js
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Tests
+        run: npm run:test:cucumber
+
+      - name: generate report
+        if: ${{always()}}
+        run: npm generate:MultipleHtml:report
+
+        
+      - name: Deploy report page
+        uses: peaceiris/actions-gh-pages@v3
+        # If you're changing the branch from main,
+        # also change the `main` in `refs/heads/main`
+        # below accordingly.
+        if: ${{ always() && github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./report
