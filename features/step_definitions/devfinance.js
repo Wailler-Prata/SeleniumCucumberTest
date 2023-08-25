@@ -4,7 +4,7 @@ const DevFinanceHome = require('../Objects/devFinance')
 const functionsDevFinance = require('../functions/functionsDevFinance')
 
 
-BeforeAll(async function(){
+BeforeAll({timeout: 60000}, async function(){
     await DevFinanceHome.openPage()
 })
 
