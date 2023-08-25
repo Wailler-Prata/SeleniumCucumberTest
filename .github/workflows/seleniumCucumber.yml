@@ -11,7 +11,7 @@ jobs:
 
       - uses: browser-actions/setup-edge@v1
         with:
-          edge-version: beta
+          edge-version: stable
       
       - name: Setup Node.js
         uses: actions/setup-node@v2
