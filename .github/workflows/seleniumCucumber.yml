@@ -20,7 +20,7 @@ jobs:
       - name: Run Microsoft Edge tests
         uses: browser-actions/setup-edge@v1
         with:
-          edge-version: 'latest'  # or specify a specific version
+          edge-version: '96.0.1054.25'
 
       - name: Run Tests
         run: npm run run:test:cucumber
