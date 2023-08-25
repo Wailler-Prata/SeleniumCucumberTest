@@ -19,7 +19,7 @@ jobs:
 
       - name: Baixar e configurar o Microsoft Edge WebDriver
         run: |
-          wget https://msedgedriver.azureedge.net/LATEST_RELEASE_URL/msedgedriver_linux64.zip
+          wget https://msedgedriver.azureedge.net/116.0.1938.54/edgedriver_linux64.zip
           unzip msedgedriver_linux64.zip
           chmod +x msedgedriver
           sudo mv msedgedriver /usr/local/bin/
