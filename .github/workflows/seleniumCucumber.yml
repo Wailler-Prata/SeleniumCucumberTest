@@ -1,51 +1,37 @@
 name: Selenium Cucumber Tests
 
-on:
-  push:
-    branches:
-      - main
-      
-  workflow_dispatch:
-    inputs:
-      browser:
-        type: edge
-        description: Which browser edge
-        required: true
-        options:
-          - chrome
-          - firefox
-          - edge
+on: push
 
 jobs:
-  build-and-test-run:
-
-    name: Test
-    runs-on: ubuntu-latest
-
-    container:
-      image: node:19
-
-    services:
-      selenium:
-        image: selenium/standalone-${{ github.event.inputs.browser }}
-        options: --shm-size=2gb
-
+  cypress-run:
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '19'
+      - name: Checkout
+        uses: actions/checkout@v3
       
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'  # Use a versão adequada do Node.js
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Baixar e configurar o Microsoft Edge WebDriver
+        run: |
+          wget https://msedgedriver.azureedge.net/LATEST_RELEASE_URL/msedgedriver_linux64.zip
+          unzip msedgedriver_linux64.zip
+          chmod +x msedgedriver
+          sudo mv msedgedriver /usr/local/bin/
+
       - name: Run Tests
         run: npm run run:test:cucumber
-        env:
-          BROWSER: ${{ github.event.inputs.browser }}
 
       - name: generate report
         if: ${{always()}}
         run: npm run generate:MultipleHtml:report
 
-
+        
       - name: Deploy report page
         uses: peaceiris/actions-gh-pages@v3
         # If you're changing the branch from main,
