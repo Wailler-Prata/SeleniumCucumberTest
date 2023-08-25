@@ -17,21 +17,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Add Microsoft Edge Repository
-        run: curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-
-      - name: Add Microsoft Edge Repository
-        run: mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-        
-      - name: Add Microsoft Edge Repository
-        run: sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
-
-      - name: Update package
-        run: apt update
-
-      - name: install Microsoft Edge
-        run: apt install microsoft-edge-dev
-
+      - name: Run Microsoft Edge tests
+        uses: browser-actions/setup-edge@v1
+        with:
+          edge-version: 'latest'  # or specify a specific version
 
       - name: Run Tests
         run: npm run run:test:cucumber
