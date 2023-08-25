@@ -1,16 +1,17 @@
 name: Selenium Cucumber Tests
 
-on: push
-  inputs:
-    browser:
-      type: edge
-      description: Which browser edge
-      required: true
-      options:
-        - chrome
-        - firefox
-        - edge
-
+on:
+  workflow_dispatch:
+    inputs:
+      browser:
+        type: edge
+        description: Which browser edge
+        required: true
+        options:
+          - chrome
+          - firefox
+          - edge
+  
 jobs:
   build-and-test-run:
 
