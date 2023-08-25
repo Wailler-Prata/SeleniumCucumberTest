@@ -5,6 +5,12 @@ on: push
 jobs:
   biuld-and-test-run:
     runs-on: ubuntu-22.04
+    services:
+      selenium:
+        image: selenium/standalone-edge:latest
+        ports:
+          - 4444:4444
+        options: --shm-size=2g
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -16,10 +22,6 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-
-      - uses: browser-actions/setup-edge@v1
-        with:
-          edge-version: beta
 
       - name: Run Tests
         run: npm run run:test:cucumber
