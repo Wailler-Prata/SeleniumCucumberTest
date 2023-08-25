@@ -12,10 +12,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Use a versão adequada do Node.js
+          node-version: '18'  # Use a versão adequada do Node.js
 
       - name: Install Dependencies
         run: npm install
+
+      - name: Install Microsoft Edge
+        run: wget https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_<version>_amd64.deb -O edge_package.deb && sudo apt install ./edge_package.deb
+
+
 
       - name: Run Tests
         run: npm run run:test:cucumber
