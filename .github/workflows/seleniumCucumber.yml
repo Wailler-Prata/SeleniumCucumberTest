@@ -8,16 +8,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      - name: Baixar e configurar o Microsoft Edge WebDriver
-        run: |
-          curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-          gpg --no-default-keyring --keyring ./microsoft-keyring.gpg --import ./microsoft.gpg
-          echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" | sudo tee /etc/apt/sources.list.d/microsoft-edge-dev.list
-          sudo mv ./microsoft-keyring.gpg /usr/share/keyrings/microsoft-archive-keyring.gpg
-          sudo apt-get update
-          sudo apt-get install -y microsoft-edge-dev
-
+      
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
@@ -25,6 +16,9 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+
+      - name: Set up Microsoft Edge WebDriver
+        uses: actions/setup-msedge@v1
 
       - name: Run Tests
         run: npm run run:test:cucumber
