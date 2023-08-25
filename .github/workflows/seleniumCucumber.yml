@@ -8,6 +8,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      - uses: browser-actions/setup-edge@v1
+        with:
+          edge-version: beta
       
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -16,9 +20,6 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-
-      - name: Set up Microsoft Edge WebDriver
-        uses: actions/setup-msedge@v1
 
       - name: Run Tests
         run: npm run run:test:cucumber
