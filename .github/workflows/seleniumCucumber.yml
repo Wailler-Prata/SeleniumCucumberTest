@@ -3,7 +3,7 @@ name: Selenium Cucumber Tests
 on: push
 
 jobs:
-  cypress-run:
+  Selenium-Cucumber-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -20,8 +20,11 @@ jobs:
       - name: Baixar e configurar o Microsoft Edge WebDriver
         run: |
           curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-          mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-          tee /etc/apt/sources.list.d/microsoft-edge-dev.list
+          gpg --no-default-keyring --keyring ./microsoft-keyring.gpg --import ./microsoft.gpg
+          echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" | sudo tee /etc/apt/sources.list.d/microsoft-edge-dev.list
+          sudo mv ./microsoft-keyring.gpg /usr/share/keyrings/microsoft-archive-keyring.gpg
+          sudo apt-get update
+          sudo apt-get install -y microsoft-edge-dev
 
       - name: Run Tests
         run: npm run run:test:cucumber
