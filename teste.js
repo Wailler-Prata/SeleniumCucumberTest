@@ -1,7 +1,7 @@
 const assert = require('assert');
 const { Builder} = require('selenium-webdriver');
 
-const driver = new Builder().forBrowser('MicrosoftEdge').build();
+const driver = new Builder().forBrowser('firefox').build();
 
 
 
