@@ -1,0 +1,439 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "teste-de-cadastro-de-entradas-na-pagina-devfinance;cadastrar-entrada-positiva",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Cadastrar Entrada positiva",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 108177799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Estou no site dev.finance$",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5591099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Cadastro uma entrada com descricao Entrada positiva, valor R$ 10.63 e data 01/03/2023",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 294122799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "O total geral deverá ser de R$ 10.63",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112653699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "O total positivo deverá ser de R$ 10.63",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39694500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "O total negativo deverá ser de R$ 0.00",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47405900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Deverá existir apenas uma entrada com descricao igual a Entrada positiva, valor R$ 10.63 e data 01/03/2023",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56507399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "teste-de-cadastro-de-entradas-na-pagina-devfinance;cadastrar-entrada-negativa",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Cadastrar Entrada negativa",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84801300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Estou no site dev.finance$",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4260800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "Cadastro uma entrada com descricao Entrada negativa, valor R$ -9 e data 03/04/2023",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182848700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "O total geral deverá ser de R$ -9",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98912100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "O total positivo deverá ser de R$ 0.00",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34956399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "O total negativo deverá ser de R$ -9",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33421700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Deverá existir apenas uma entrada com descricao igual a Entrada negativa, valor R$ -9 e data 03/04/2023",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39890699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "teste-de-cadastro-de-entradas-na-pagina-devfinance;validaçao-dos-totais-com-multiplas-entradas",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Validaçao dos totais com multiplas entradas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 82005299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Estou no site dev.finance$",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5558500
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Entrada positiva",
+                      "10.63",
+                      "01/03/2023"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Entrada negativa",
+                      "-9",
+                      "03/04/2023"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Possuo as seguintes entradas cadastradas",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 506613800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "O total geral deverá ser de R$ 1.63",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105001600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "O total negativo deverá ser de R$ -9",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35187700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "O total positivo deverá ser de R$ 10.63",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38364599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "teste-de-cadastro-de-entradas-na-pagina-devfinance;remoção-de-entradas",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Remoção de entradas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 92008299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Estou no site dev.finance$",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5148300
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Entrada positiva",
+                      "10.63",
+                      "01/03/2023"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Entrada negativa",
+                      "-9",
+                      "03/04/2023"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 40,
+            "name": "Possuo as seguintes entradas cadastradas",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 475600600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "remover a ultima entrada",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127749400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "O total geral deverá ser de R$ 10.63",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39443400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "O total negativo deverá ser de R$ 0.00",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44830900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "O total positivo deverá ser de R$ 10.63",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50376800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "Deverá existir apenas uma entrada com descricao igual a Entrada positiva, valor R$ 10.63 e data 01/03/2023",
+            "match": {
+              "location": "features\\step_definitions\\devfinance.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47256299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "teste-de-cadastro-de-entradas-na-pagina-devfinance",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Teste de cadastro de entradas na pagina DevFinance",
+    "tags": [],
+    "uri": "features\\devfinance.feature"
+  }
+]
