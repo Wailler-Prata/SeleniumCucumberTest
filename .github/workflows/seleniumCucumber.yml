@@ -3,7 +3,7 @@ name: Selenium Cucumber Tests
 on: push
 
 jobs:
-  cypress-run:
+  biuld-and-test-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -17,9 +17,16 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Install Microsoft Edge
-        run: wget https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_<version>_amd64.deb -O edge_package.deb && sudo apt install ./edge_package.deb
+      - name: Add Microsoft Edge Repository
+        run: curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && \
+             sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg && \
+             sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
 
+      - name: Update package
+        run: sudo apt update
+
+      - name: install Microsoft Edge
+        run: sudo apt install microsoft-edge-dev
 
 
       - name: Run Tests
