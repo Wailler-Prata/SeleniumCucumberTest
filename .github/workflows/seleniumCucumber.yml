@@ -8,14 +8,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18'  # Use a versão adequada do Node.js
-
-      - name: Install Dependencies
-        run: npm install
 
       - name: Baixar e configurar o Microsoft Edge WebDriver
         run: |
@@ -25,6 +17,14 @@ jobs:
           sudo mv ./microsoft-keyring.gpg /usr/share/keyrings/microsoft-archive-keyring.gpg
           sudo apt-get update
           sudo apt-get install -y microsoft-edge-dev
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'  # Use a versão adequada do Node.js
+
+      - name: Install Dependencies
+        run: npm install
 
       - name: Run Tests
         run: npm run run:test:cucumber
