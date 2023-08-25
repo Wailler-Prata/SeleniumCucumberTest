@@ -16,7 +16,7 @@ jobs:
         node-version: 14 # Set to your desired Node.js version
 
     - name: Install Dependencies
-      run: npm install && npm install msedge-selenium-tools
+      run: npm install
 
     - name: Download and Install Microsoft Edge WebDriver
       run: |
