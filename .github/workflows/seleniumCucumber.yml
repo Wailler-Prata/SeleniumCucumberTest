@@ -1,40 +1,29 @@
-name: Selenium Cucumber Tests
+name: Selenium Tests with Microsoft Edge
 
-on: push
+on: [push] # You can customize the trigger event(s) here
 
 jobs:
-  Selenium-Cucumber-run:
-    runs-on: ubuntu-22.04
+  test:
+    runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - uses: browser-actions/setup-edge@v1
-        with:
-          edge-version: stable
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18'  # Use a versão adequada do Node.js
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14 # Set to your desired Node.js version
 
-      - name: Install Dependencies
-        run: npm install
+    - name: Install Dependencies
+      run: npm install
 
-      - name: Run Tests
-        run: npm run run:test:cucumber
-
-      - name: generate report
-        if: ${{always()}}
-        run: npm run generate:MultipleHtml:report
-
+    - name: Download and Install Microsoft Edge WebDriver
+      run: |
+        curl -s -L https://msedgedriver.azureedge.net/latest/MicrosoftEdge.Linux.x64.zip -o msedgedriver.zip
+        unzip msedgedriver.zip
+        chmod +x msedgedriver
+        sudo mv msedgedriver /usr/local/bin/
         
-      - name: Deploy report page
-        uses: peaceiris/actions-gh-pages@v3
-        # If you're changing the branch from main,
-        # also change the `main` in `refs/heads/main`
-        # below accordingly.
-        if: ${{ always() && github.ref == 'refs/heads/main' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./report
+    - name: Run Selenium Tests
+      run: npm run run:test:cucumber
