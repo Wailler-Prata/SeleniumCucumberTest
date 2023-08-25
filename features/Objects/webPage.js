@@ -4,7 +4,7 @@ module.exports = class WebPage{
     
     constructor(url){
         this.url = url
-        this.driver = new Builder().forBrowser('MicrosoftEdge').build();
+        this.driver = new Builder().forBrowser('firefox').build();
     }
 
     async openPage(){

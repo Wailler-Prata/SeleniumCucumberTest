@@ -17,13 +17,6 @@ jobs:
 
     - name: Install Dependencies
       run: npm install
-
-    - name: Download and Install Microsoft Edge WebDriver
-      run: |
-        curl -s -L https://msedgedriver.azureedge.net/115.0.1901.203/edgedriver_linux64.zip -o msedgedriver.zip
-        unzip msedgedriver.zip
-        chmod +x msedgedriver
-        sudo mv msedgedriver /opt/microsoft/msedge/microsoft-edge/
         
     - name: Run Selenium Tests
       run: npm run run:test:cucumber
