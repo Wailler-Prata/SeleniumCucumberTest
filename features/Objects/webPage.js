@@ -1,10 +1,10 @@
-const { Builder} = require('selenium-webdriver');
+const { Builder } = require('selenium-webdriver');
 
 module.exports = class WebPage{
     
     constructor(url){
         this.url = url
-        this.driver = new Builder().forBrowser('firefox').build();
+        this.driver = new Builder().forBrowser('MicrosoftEdge').build();
     }
 
     async openPage(){

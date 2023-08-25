@@ -4,20 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run:test:cucumber": "cucumber-js -f json:report/cucumber_report.json",
+    "run:test:cucumber": "npx cucumber-js -f json:report/cucumber_report.json",
     "generate:html:report": "node generateReportHtml.js",
     "generate:MultipleHtml:report": "node generateReporterMultipleHtml.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@cucumber/cucumber": "^9.0.0"
-  },
+
   "dependencies": {
+    "@cucumber/cucumber": "^9.4.0",
     "assert": "^2.0.0",
     "cucumber-html-reporter": "^7.1.1",
     "multiple-cucumber-html-reporter": "^3.4.0",
-    "selenium-webdriver": "^4.9.2"
+    "selenium-webdriver": "^4.11.1"
   }
 }
