@@ -20,7 +20,7 @@ jobs:
 
     - name: Download and Install Microsoft Edge WebDriver
       run: |
-        curl -s -L https://msedgedriver.azureedge.net/latest/MicrosoftEdge.Linux.x64.zip -o msedgedriver.zip
+        curl -s -L https://msedgedriver.azureedge.net/116.0.1938.54/edgedriver_linux64.zip -o msedgedriver.zip
         unzip msedgedriver.zip
         chmod +x msedgedriver
         sudo mv msedgedriver /usr/local/bin/
