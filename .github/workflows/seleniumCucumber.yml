@@ -19,10 +19,9 @@ jobs:
 
       - name: Baixar e configurar o Microsoft Edge WebDriver
         run: |
-          wget https://msedgedriver.azureedge.net/116.0.1938.54/edgedriver_linux64.zip
-          unzip edgedriver_linux64.zip
-          chmod +x msedgedriver
-          sudo mv msedgedriver /usr/local/bin/
+          curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+          mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+          tee /etc/apt/sources.list.d/microsoft-edge-dev.list
 
       - name: Run Tests
         run: npm run run:test:cucumber
