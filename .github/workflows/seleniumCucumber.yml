@@ -11,42 +11,43 @@ on:
           - chrome
           - firefox
           - edge
-  
+
 jobs:
   build-and-test-run:
 
+    name: Test
     runs-on: ubuntu-latest
 
-      container:
-        image: node:19
+    container:
+      image: node:19
 
-      services:
-        selenium:
-          image: selenium/standalone-${{ github.event.inputs.browser }}
-          options: --shm-size=2gb
+    services:
+      selenium:
+        image: selenium/standalone-${{ github.event.inputs.browser }}
+        options: --shm-size=2gb
 
-      steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-node@v3
-          with:
-            node-version: '19'
-        
-        - name: Run Tests
-          run: npm run run:test:cucumber
-          env:
-            BROWSER: ${{ github.event.inputs.browser }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '19'
+      
+      - name: Run Tests
+        run: npm run run:test:cucumber
+        env:
+          BROWSER: ${{ github.event.inputs.browser }}
 
-        - name: generate report
-          if: ${{always()}}
-          run: npm run generate:MultipleHtml:report
+      - name: generate report
+        if: ${{always()}}
+        run: npm run generate:MultipleHtml:report
 
 
-        - name: Deploy report page
-          uses: peaceiris/actions-gh-pages@v3
-          # If you're changing the branch from main,
-          # also change the `main` in `refs/heads/main`
-          # below accordingly.
-          if: ${{ always() && github.ref == 'refs/heads/main' }}
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./report
+      - name: Deploy report page
+        uses: peaceiris/actions-gh-pages@v3
+        # If you're changing the branch from main,
+        # also change the `main` in `refs/heads/main`
+        # below accordingly.
+        if: ${{ always() && github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./report
