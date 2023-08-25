@@ -1,12 +1,15 @@
 const { Builder, WebStorage} = require('selenium-webdriver');
 
+const edge = require('selenium-webdriver/edge');
+const edgeDriverPath = '/usr/local/bin/msedgedriver'; // Update with the actual path
+
 module.exports = class WebPage{
     
     constructor(url){
         this.url = url
     }
-    driver = new Builder().forBrowser('MicrosoftEdge').build();
-    
+    //driver = new Builder().forBrowser('MicrosoftEdge').build();
+    driver = new edge.Driver(new edge.Options().setEdgeService(new edge.ServiceBuilder(edgeDriverPath)));
 
     async openPage(){
         await this.driver.get(this.url)
