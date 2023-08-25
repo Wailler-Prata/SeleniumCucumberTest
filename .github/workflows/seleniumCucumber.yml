@@ -18,9 +18,9 @@ jobs:
         run: npm install
 
       - name: Add Microsoft Edge Repository
-        run: curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && \
-             mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg && \
-             sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
+        run: curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+        run: mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg && \
+        run: sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
 
       - name: Update package
         run: apt update
