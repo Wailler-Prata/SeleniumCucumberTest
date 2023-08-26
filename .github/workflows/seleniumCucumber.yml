@@ -10,6 +10,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - uses: browser-actions/setup-edge@v1
+      with:
+        edge-version: beta
+
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:

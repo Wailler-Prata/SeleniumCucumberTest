@@ -1,10 +1,15 @@
 const { Builder } = require('selenium-webdriver');
+const edge = require('selenium-webdriver/edge');
+
+const edgeOptions = new edge.Options()
+  .addArguments('--headless')
+  .addArguments('--disable-gpu')
 
 module.exports = class WebPage{
     
     constructor(url){
         this.url = url
-        this.driver = new Builder().forBrowser('MicrosoftEdge').build();
+        this.driver = new Builder().forBrowser('MicrosoftEdge').setEdgeOptions(edgeOptions).build()
     }
 
     async openPage(){
