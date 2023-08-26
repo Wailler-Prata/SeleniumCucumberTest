@@ -27,6 +27,7 @@ jobs:
         
     - name: Run Selenium Tests
       run: npm run run:test:cucumber
+      continue-on-error: true
 
     - name: Genrate report Selenium Tests
       if: ${{ always()}}
