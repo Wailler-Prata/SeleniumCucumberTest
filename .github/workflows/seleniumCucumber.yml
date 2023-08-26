@@ -26,4 +26,4 @@ jobs:
       run: npm install
         
     - name: Run Selenium Tests
-      run: node teste.js
+      run: run run:test:cucumber
