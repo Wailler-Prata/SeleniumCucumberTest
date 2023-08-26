@@ -7,9 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
     - name: Download and config Microsoft Edge WebDriver
       run: |
         wget https://msedgedriver.azureedge.net/115.0.1901.203/edgedriver_linux64.zip -O msedgedriver_linux64.zip
@@ -17,26 +14,19 @@ jobs:
         chmod +x msedgedriver
         sudo mv msedgedriver /usr/local/bin/
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18 # Set to your desired Node.js version
-
-    - name: Install Dependencies
-      run: npm install
+    - name: Checkout
+      uses: actions/checkout@v3
         
     - name: Run Selenium Tests
       run: npm run run:test:cucumber
 
     - name: Genrate report Selenium Tests
-      if: ${{ always()}}
+      if: ${{ always() }}
       run: npm run generate:MultipleHtml:report
 
     - name: Deploy report page
       uses: peaceiris/actions-gh-pages@v3
-      # If you're changing the branch from main,
-      # also change the `main` in `refs/heads/main`
-      # below accordingly.
+      
       if: ${{ always() && github.ref == 'refs/heads/main' }}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
