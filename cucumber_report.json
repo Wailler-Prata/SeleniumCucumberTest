@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 133727662
+              "duration": 138286561
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6206273
+              "duration": 11869253
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 358891193
+              "duration": 357913923
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 246370177
+              "duration": 201599919
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 50314588
+              "duration": 53866716
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53340922
+              "duration": 62411515
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 98319849,
+              "duration": 93985890,
               "error_message": "AssertionError [ERR_ASSERTION]: Era esperado 1 registros, mas obtivemos 0\n    + expected - actual\n\n    -0\n    +1\n\n    at World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:64:12)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
             }
           }
@@ -112,7 +112,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 113703127
+              "duration": 128401699
             }
           },
           {
@@ -125,7 +125,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4720555
+              "duration": 5343449
             }
           },
           {
@@ -138,7 +138,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 192960955
+              "duration": 212651336
             }
           },
           {
@@ -151,7 +151,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 164992228
+              "duration": 185710675
             }
           },
           {
@@ -164,7 +164,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49942683
+              "duration": 53341191
             }
           },
           {
@@ -177,7 +177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 51822606
+              "duration": 64155597
             }
           },
           {
@@ -190,7 +190,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 60856711,
+              "duration": 76647380,
               "error_message": "AssertionError [ERR_ASSERTION]: Era esperado 1 registros, mas obtivemos 0\n    + expected - actual\n\n    -0\n    +1\n\n    at World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:64:12)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
             }
           }
@@ -210,7 +210,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 125530066
+              "duration": 116535044
             }
           },
           {
@@ -223,7 +223,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9867115
+              "duration": 8656604
             }
           },
           {
@@ -255,7 +255,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 592557023
+              "duration": 559757052
             }
           },
           {
@@ -268,7 +268,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 169908484
+              "duration": 168243860
             }
           },
           {
@@ -281,7 +281,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 64517252
+              "duration": 59121362
             }
           },
           {
@@ -294,7 +294,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 51302800
+              "duration": 54602150
             }
           }
         ],
@@ -313,7 +313,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 116726964
+              "duration": 112994479
             }
           },
           {
@@ -326,7 +326,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9275108
+              "duration": 8524199
             }
           },
           {
@@ -358,7 +358,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 619331936
+              "duration": 601067683
             }
           },
           {
@@ -371,7 +371,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 183505643
+              "duration": 188929827
             }
           },
           {
@@ -384,7 +384,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54663938
+              "duration": 52616957
             }
           },
           {
@@ -397,7 +397,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54581938
+              "duration": 55175878
             }
           },
           {
@@ -410,7 +410,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49917783
+              "duration": 53285489
             }
           },
           {
@@ -423,7 +423,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 65975271,
+              "duration": 60235113,
               "error_message": "AssertionError [ERR_ASSERTION]: Era esperado 1 registros, mas obtivemos 0\n    + expected - actual\n\n    -0\n    +1\n\n    at World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:64:12)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
             }
           }
