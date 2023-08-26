@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 211741001
+              "duration": 253124038
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10438120
+              "duration": 7424085
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 297495804
+              "duration": 552414831
             }
           },
           {
@@ -52,9 +52,8 @@
               "location": "features/step_definitions/devfinance.js:40"
             },
             "result": {
-              "status": "failed",
-              "duration": 143837060,
-              "error_message": "UnexpectedAlertOpenError: Dismissed user prompt dialog: Por favor, preencha todos os campos\n    at Object.throwDecodedError (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/error.js:524:15)\n    at parseHttpResponse (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:601:13)\n    at Executor.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async thenableWebDriverProxy.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/webdriver.js:745:17)\n    at async DevFinanceHome.findElement (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/webPage.js:39:16)\n    at async DevFinanceHome.returnTotalValueOf (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/devFinance.js:44:31)\n    at async World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:41:32)"
+              "status": "passed",
+              "duration": 171334674
             }
           },
           {
@@ -66,8 +65,8 @@
               "location": "features/step_definitions/devfinance.js:46"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 40120060
             }
           },
           {
@@ -79,8 +78,8 @@
               "location": "features/step_definitions/devfinance.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 39849152
             }
           },
           {
@@ -92,8 +91,9 @@
               "location": "features/step_definitions/devfinance.js:58"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 76303214,
+              "error_message": "AssertionError [ERR_ASSERTION]: Era esperado 1 registros, mas obtivemos 0\n    + expected - actual\n\n    -0\n    +1\n\n    at World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:64:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
             }
           }
         ],
@@ -112,7 +112,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 206016860
+              "duration": 79720805
             }
           },
           {
@@ -125,7 +125,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2085424
+              "duration": 3768000
             }
           },
           {
@@ -138,7 +138,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 266594366
+              "duration": 160193631
             }
           },
           {
@@ -150,9 +150,8 @@
               "location": "features/step_definitions/devfinance.js:40"
             },
             "result": {
-              "status": "failed",
-              "duration": 81304539,
-              "error_message": "UnexpectedAlertOpenError: Dismissed user prompt dialog: Por favor, preencha todos os campos\n    at Object.throwDecodedError (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/error.js:524:15)\n    at parseHttpResponse (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:601:13)\n    at Executor.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async thenableWebDriverProxy.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/webdriver.js:745:17)\n    at async DevFinanceHome.findElement (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/webPage.js:39:16)\n    at async DevFinanceHome.returnTotalValueOf (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/devFinance.js:44:31)\n    at async World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:41:32)"
+              "status": "passed",
+              "duration": 114935335
             }
           },
           {
@@ -164,8 +163,8 @@
               "location": "features/step_definitions/devfinance.js:46"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 38101105
             }
           },
           {
@@ -177,8 +176,8 @@
               "location": "features/step_definitions/devfinance.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 38939729
             }
           },
           {
@@ -190,8 +189,9 @@
               "location": "features/step_definitions/devfinance.js:58"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 46269521,
+              "error_message": "AssertionError [ERR_ASSERTION]: Era esperado 1 registros, mas obtivemos 0\n    + expected - actual\n\n    -0\n    +1\n\n    at World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:64:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
             }
           }
         ],
@@ -210,7 +210,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 228790517
+              "duration": 79472698
             }
           },
           {
@@ -223,7 +223,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2721961
+              "duration": 3751700
             }
           },
           {
@@ -254,9 +254,8 @@
               "location": "features/step_definitions/devfinance.js:26"
             },
             "result": {
-              "status": "failed",
-              "duration": 362700385,
-              "error_message": "UnexpectedAlertOpenError: Dismissed user prompt dialog: Por favor, preencha todos os campos\n    at Object.throwDecodedError (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/error.js:524:15)\n    at parseHttpResponse (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:601:13)\n    at Executor.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async thenableWebDriverProxy.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/webdriver.js:745:17)\n    at async DevFinanceHome.findElement (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/webPage.js:39:16)\n    at async DevFinanceHome.registerEntrance (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/devFinance.js:28:9)\n    at async World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:28:9)"
+              "status": "passed",
+              "duration": 388562262
             }
           },
           {
@@ -268,8 +267,8 @@
               "location": "features/step_definitions/devfinance.js:40"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 117037091
             }
           },
           {
@@ -281,8 +280,8 @@
               "location": "features/step_definitions/devfinance.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 92177835
             }
           },
           {
@@ -294,8 +293,8 @@
               "location": "features/step_definitions/devfinance.js:46"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 41204489
             }
           }
         ],
@@ -313,9 +312,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 6263672,
-              "error_message": "ElementClickInterceptedError: Element <a class=\"button new\" href=\"#\"> is not clickable at point (347,254) because another element <div class=\"modal-overlay active\"> obscures it\n    at Object.throwDecodedError (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/error.js:524:15)\n    at parseHttpResponse (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:601:13)\n    at Executor.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async thenableWebDriverProxy.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/webdriver.js:745:17)"
+              "status": "passed",
+              "duration": 89574366
             }
           },
           {
@@ -327,8 +325,8 @@
               "location": "features/step_definitions/devfinance.js:19"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3907203
             }
           },
           {
@@ -359,8 +357,8 @@
               "location": "features/step_definitions/devfinance.js:26"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 381946188
             }
           },
           {
@@ -372,8 +370,8 @@
               "location": "features/step_definitions/devfinance.js:36"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 174071597
             }
           },
           {
@@ -385,8 +383,8 @@
               "location": "features/step_definitions/devfinance.js:40"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 43804357
             }
           },
           {
@@ -398,8 +396,8 @@
               "location": "features/step_definitions/devfinance.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 40004356
             }
           },
           {
@@ -411,8 +409,8 @@
               "location": "features/step_definitions/devfinance.js:46"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 43069738
             }
           },
           {
@@ -424,8 +422,9 @@
               "location": "features/step_definitions/devfinance.js:58"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 47348150,
+              "error_message": "AssertionError [ERR_ASSERTION]: Era esperado 1 registros, mas obtivemos 0\n    + expected - actual\n\n    -0\n    +1\n\n    at World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:64:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
             }
           }
         ],
