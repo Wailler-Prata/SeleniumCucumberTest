@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 111171870
+              "duration": 95527699
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 4,
             "name": "Estou no site dev.finance$",
             "match": {
-              "location": "features/step_definitions/devfinance.js:19"
+              "location": "features\\step_definitions\\devfinance.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 5507662
+              "duration": 6290899
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 7,
             "name": "Cadastro uma entrada com descricao Entrada positiva, valor R$ 10.63 e data 01/03/2023",
             "match": {
-              "location": "features/step_definitions/devfinance.js:32"
+              "location": "features\\step_definitions\\devfinance.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 446953804
+              "duration": 203905200
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 8,
             "name": "O total geral deverá ser de R$ 10.63",
             "match": {
-              "location": "features/step_definitions/devfinance.js:40"
+              "location": "features\\step_definitions\\devfinance.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 181672875
+              "duration": 141530299
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 9,
             "name": "O total positivo deverá ser de R$ 10.63",
             "match": {
-              "location": "features/step_definitions/devfinance.js:46"
+              "location": "features\\step_definitions\\devfinance.js:46"
             },
             "result": {
               "status": "passed",
-              "duration": 42579186
+              "duration": 47957000
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 10,
             "name": "O total negativo deverá ser de R$ 0.00",
             "match": {
-              "location": "features/step_definitions/devfinance.js:52"
+              "location": "features\\step_definitions\\devfinance.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 41623875
+              "duration": 50355900
             }
           },
           {
@@ -88,12 +88,11 @@
             "line": 11,
             "name": "Deverá existir apenas uma entrada com descricao igual a Entrada positiva, valor R$ 10.63 e data 01/03/2023",
             "match": {
-              "location": "features/step_definitions/devfinance.js:58"
+              "location": "features\\step_definitions\\devfinance.js:58"
             },
             "result": {
-              "status": "failed",
-              "duration": 111128968,
-              "error_message": "AssertionError [ERR_ASSERTION]: Era esperado 1 registros, mas obtivemos 0\n    + expected - actual\n\n    -0\n    +1\n\n    at World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:64:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+              "status": "passed",
+              "duration": 69489900
             }
           }
         ],
@@ -112,7 +111,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 72325425
+              "duration": 90141899
             }
           },
           {
@@ -121,11 +120,11 @@
             "line": 4,
             "name": "Estou no site dev.finance$",
             "match": {
-              "location": "features/step_definitions/devfinance.js:19"
+              "location": "features\\step_definitions\\devfinance.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 4525151
+              "duration": 4988600
             }
           },
           {
@@ -134,11 +133,11 @@
             "line": 19,
             "name": "Cadastro uma entrada com descricao Entrada negativa, valor R$ -9 e data 03/04/2023",
             "match": {
-              "location": "features/step_definitions/devfinance.js:32"
+              "location": "features\\step_definitions\\devfinance.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 186567431
+              "duration": 148819700
             }
           },
           {
@@ -147,11 +146,11 @@
             "line": 20,
             "name": "O total geral deverá ser de R$ -9",
             "match": {
-              "location": "features/step_definitions/devfinance.js:40"
+              "location": "features\\step_definitions\\devfinance.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 121795390
+              "duration": 116717300
             }
           },
           {
@@ -160,11 +159,11 @@
             "line": 21,
             "name": "O total positivo deverá ser de R$ 0.00",
             "match": {
-              "location": "features/step_definitions/devfinance.js:46"
+              "location": "features\\step_definitions\\devfinance.js:46"
             },
             "result": {
               "status": "passed",
-              "duration": 39834155
+              "duration": 46096199
             }
           },
           {
@@ -173,11 +172,11 @@
             "line": 22,
             "name": "O total negativo deverá ser de R$ -9",
             "match": {
-              "location": "features/step_definitions/devfinance.js:52"
+              "location": "features\\step_definitions\\devfinance.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 39860254
+              "duration": 46324899
             }
           },
           {
@@ -186,12 +185,11 @@
             "line": 23,
             "name": "Deverá existir apenas uma entrada com descricao igual a Entrada negativa, valor R$ -9 e data 03/04/2023",
             "match": {
-              "location": "features/step_definitions/devfinance.js:58"
+              "location": "features\\step_definitions\\devfinance.js:58"
             },
             "result": {
-              "status": "failed",
-              "duration": 44424406,
-              "error_message": "AssertionError [ERR_ASSERTION]: Era esperado 1 registros, mas obtivemos 0\n    + expected - actual\n\n    -0\n    +1\n\n    at World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:64:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+              "status": "passed",
+              "duration": 61809700
             }
           }
         ],
@@ -210,7 +208,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 76194971
+              "duration": 103876199
             }
           },
           {
@@ -219,11 +217,11 @@
             "line": 4,
             "name": "Estou no site dev.finance$",
             "match": {
-              "location": "features/step_definitions/devfinance.js:19"
+              "location": "features\\step_definitions\\devfinance.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 3705642
+              "duration": 5443799
             }
           },
           {
@@ -251,11 +249,11 @@
             "line": 31,
             "name": "Possuo as seguintes entradas cadastradas",
             "match": {
-              "location": "features/step_definitions/devfinance.js:26"
+              "location": "features\\step_definitions\\devfinance.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 396523329
+              "duration": 375864900
             }
           },
           {
@@ -264,11 +262,11 @@
             "line": 34,
             "name": "O total geral deverá ser de R$ 1.63",
             "match": {
-              "location": "features/step_definitions/devfinance.js:40"
+              "location": "features\\step_definitions\\devfinance.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 125069329
+              "duration": 100871399
             }
           },
           {
@@ -277,11 +275,11 @@
             "line": 35,
             "name": "O total negativo deverá ser de R$ -9",
             "match": {
-              "location": "features/step_definitions/devfinance.js:52"
+              "location": "features\\step_definitions\\devfinance.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 41327172
+              "duration": 42187400
             }
           },
           {
@@ -290,11 +288,11 @@
             "line": 36,
             "name": "O total positivo deverá ser de R$ 10.63",
             "match": {
-              "location": "features/step_definitions/devfinance.js:46"
+              "location": "features\\step_definitions\\devfinance.js:46"
             },
             "result": {
               "status": "passed",
-              "duration": 40051457
+              "duration": 50265499
             }
           }
         ],
@@ -313,7 +311,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 75550862
+              "duration": 95946499
             }
           },
           {
@@ -322,11 +320,11 @@
             "line": 4,
             "name": "Estou no site dev.finance$",
             "match": {
-              "location": "features/step_definitions/devfinance.js:19"
+              "location": "features\\step_definitions\\devfinance.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 3709041
+              "duration": 4131599
             }
           },
           {
@@ -354,11 +352,11 @@
             "line": 40,
             "name": "Possuo as seguintes entradas cadastradas",
             "match": {
-              "location": "features/step_definitions/devfinance.js:26"
+              "location": "features\\step_definitions\\devfinance.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 464802209
+              "duration": 342408999
             }
           },
           {
@@ -367,11 +365,11 @@
             "line": 43,
             "name": "remover a ultima entrada",
             "match": {
-              "location": "features/step_definitions/devfinance.js:36"
+              "location": "features\\step_definitions\\devfinance.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 143755141
+              "duration": 114936800
             }
           },
           {
@@ -380,11 +378,11 @@
             "line": 44,
             "name": "O total geral deverá ser de R$ 10.63",
             "match": {
-              "location": "features/step_definitions/devfinance.js:40"
+              "location": "features\\step_definitions\\devfinance.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 42282682
+              "duration": 41819999
             }
           },
           {
@@ -393,11 +391,11 @@
             "line": 45,
             "name": "O total negativo deverá ser de R$ 0.00",
             "match": {
-              "location": "features/step_definitions/devfinance.js:52"
+              "location": "features\\step_definitions\\devfinance.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 40095258
+              "duration": 48187400
             }
           },
           {
@@ -406,11 +404,11 @@
             "line": 46,
             "name": "O total positivo deverá ser de R$ 10.63",
             "match": {
-              "location": "features/step_definitions/devfinance.js:46"
+              "location": "features\\step_definitions\\devfinance.js:46"
             },
             "result": {
               "status": "passed",
-              "duration": 42815388
+              "duration": 44266900
             }
           },
           {
@@ -419,12 +417,11 @@
             "line": 47,
             "name": "Deverá existir apenas uma entrada com descricao igual a Entrada positiva, valor R$ 10.63 e data 01/03/2023",
             "match": {
-              "location": "features/step_definitions/devfinance.js:58"
+              "location": "features\\step_definitions\\devfinance.js:58"
             },
             "result": {
-              "status": "failed",
-              "duration": 49158462,
-              "error_message": "AssertionError [ERR_ASSERTION]: Era esperado 1 registros, mas obtivemos 0\n    + expected - actual\n\n    -0\n    +1\n\n    at World.<anonymous> (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:64:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+              "status": "passed",
+              "duration": 49701999
             }
           }
         ],
@@ -437,6 +434,6 @@
     "keyword": "Feature",
     "name": "Teste de cadastro de entradas na pagina DevFinance",
     "tags": [],
-    "uri": "features/devfinance.feature"
+    "uri": "features\\devfinance.feature"
   }
 ]
