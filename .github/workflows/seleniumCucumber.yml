@@ -18,16 +18,15 @@ jobs:
         sudo mv msedgedriver /usr/local/bin/
 
     - name: Setup Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: 14 # Set to your desired Node.js version
+        node-version: 18 # Set to your desired Node.js version
 
     - name: Install Dependencies
       run: npm install
         
     - name: Run Selenium Tests
       run: npm run run:test:cucumber
-      continue-on-error: true
 
     - name: Genrate report Selenium Tests
       if: ${{ always()}}
