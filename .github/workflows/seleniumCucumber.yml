@@ -16,6 +16,7 @@ jobs:
 
     - name: Checkout
       uses: actions/checkout@v3
+      run: npm install -y
         
     - name: Run Selenium Tests
       run: npm run run:test:cucumber
@@ -26,7 +27,7 @@ jobs:
 
     - name: Deploy report page
       uses: peaceiris/actions-gh-pages@v3
-      
+
       if: ${{ always() && github.ref == 'refs/heads/main' }}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
