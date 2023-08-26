@@ -58,8 +58,13 @@ Then('O total negativo deverá ser de R$ {float}', async function (value) {
 Then('Deverá existir apenas uma entrada com descricao igual a {}, valor R$ {float} e data {}', async function (description, value, date) {
     const dataOfRows = await DevFinanceHome.returnDataOfTableRows()
     let result = []
+    console.log("\n<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+    console.log(`\nEsperado: {description: ${description}, value: ${value}, date: ${date}}`)
+
     for(data in dataOfRows){
+        console.log(`Encontrado: {description: ${dataOfRows[data].description}, value: ${dataOfRows[data].value}, date: ${dataOfRows[data].date}}`)
         dataOfRows[data].description == description && dataOfRows[data].value == value && dataOfRows[data].date == date ? result.push(dataOfRows[data]) : ''
     }
+    console.log(`Era esperado 1 registros, mas obtivemos ${result.length}`)
     assert.strictEqual(result.length, 1, `Era esperado 1 registros, mas obtivemos ${result.length}`)
 });
