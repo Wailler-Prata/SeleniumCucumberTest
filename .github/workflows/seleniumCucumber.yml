@@ -14,11 +14,11 @@ jobs:
         chmod +x msedgedriver
         sudo mv msedgedriver /usr/local/bin/
 
-    - name: Install all dependencies
-      run: npm install -y
-
     - name: Checkout
       uses: actions/checkout@v3
+
+    - name: Install all dependencies
+      run: npm install -y
         
     - name: Run Selenium Tests
       run: npm run run:test:cucumber
