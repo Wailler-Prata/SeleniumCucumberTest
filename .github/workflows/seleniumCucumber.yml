@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Download and config Microsoft Edge WebDriver
       run: |
-        wget https://msedgedriver.azureedge.net/117.0.2045.9/edgedriver_linux64.zip -O msedgedriver_linux64.zip
+        wget https://msedgedriver.azureedge.net/115.0.1901.203/edgedriver_linux64.zip -O msedgedriver_linux64.zip
         unzip msedgedriver_linux64.zip
         chmod +x msedgedriver
         sudo mv msedgedriver /usr/local/bin/
