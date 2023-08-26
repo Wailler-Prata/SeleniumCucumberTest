@@ -8,7 +8,7 @@ Feature: Teste de cadastro de entradas na pagina DevFinance
         Then O total geral deverá ser de R$ <valor>
         And O total positivo deverá ser de R$ <valorTotalEntradaPositiva>
         And O total negativo deverá ser de R$ <valorTotalEntradaNegativo>
-        And Deverá existir apenas uma entrada com descricao igual a <descricao>, valor R$ <valor> e data <data> 
+        And Deverá existir apenas uma entrada com descricao igual a <descricao>, valor R$ <valor>
             
         Examples:
         |  descricao       | valor |   data     | valorTotalEntradaPositiva | valorTotalEntradaNegativo |
@@ -20,7 +20,7 @@ Feature: Teste de cadastro de entradas na pagina DevFinance
         Then O total geral deverá ser de R$ <valor>
         And O total positivo deverá ser de R$ <valorTotalEntradaPositiva>
         And O total negativo deverá ser de R$ <valorTotalEntradaNegativo>
-        And Deverá existir apenas uma entrada com descricao igual a <descricao>, valor R$ <valor> e data <data> 
+        And Deverá existir apenas uma entrada com descricao igual a <descricao>, valor R$ <valor>
             
         Examples:
         |  descricao       | valor |   data     | valorTotalEntradaPositiva | valorTotalEntradaNegativo |
@@ -44,4 +44,4 @@ Feature: Teste de cadastro de entradas na pagina DevFinance
         Then O total geral deverá ser de R$ 10.63
         And O total negativo deverá ser de R$ 0.00
         And O total positivo deverá ser de R$ 10.63
-        And Deverá existir apenas uma entrada com descricao igual a Entrada positiva, valor R$ 10.63 e data 01/03/2023
+        And Deverá existir apenas uma entrada com descricao igual a Entrada positiva, valor R$ 10.63

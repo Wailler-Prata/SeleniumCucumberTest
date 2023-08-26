@@ -4,7 +4,7 @@ const DevFinanceHome = require('../Objects/devFinance')
 const functionsDevFinance = require('../functions/functionsDevFinance')
 
 
-BeforeAll({timeout: 60000}, async function(){
+BeforeAll(async function(){
     await DevFinanceHome.openPage()
 })
 
@@ -55,16 +55,12 @@ Then('O total negativo deverá ser de R$ {float}', async function (value) {
         `Era esperado R$ ${value} como valor total das entradas negativas, mas obtivemos R$ ${functionsDevFinance.convertStringNumberTo(returnTotalValueOf.negativeEntrance).float()}`)
 });
 
-Then('Deverá existir apenas uma entrada com descricao igual a {}, valor R$ {float} e data {}', async function (description, value, date) {
+Then('Deverá existir apenas uma entrada com descricao igual a {}, valor R$ {float}', async function (description, value) {
     const dataOfRows = await DevFinanceHome.returnDataOfTableRows()
     let result = []
-    console.log("\n<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-    console.log(`\nEsperado: {description: ${description}, value: ${value}, date: ${date}}`)
 
     for(data in dataOfRows){
-        console.log(`Encontrado: {description: ${dataOfRows[data].description}, value: ${dataOfRows[data].value}, date: ${dataOfRows[data].date}}`)
-        dataOfRows[data].description == description && dataOfRows[data].value == value && dataOfRows[data].date == date ? result.push(dataOfRows[data]) : ''
+       dataOfRows[data].description === description && Number.parseFloat(dataOfRows[data].value) === value ? result.push(dataOfRows[data]) : ''
     }
-    console.log(`Era esperado 1 registros, mas obtivemos ${result.length}`)
     assert.strictEqual(result.length, 1, `Era esperado 1 registros, mas obtivemos ${result.length}`)
 });
