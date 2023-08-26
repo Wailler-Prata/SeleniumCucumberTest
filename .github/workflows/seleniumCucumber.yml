@@ -10,9 +10,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - uses: browser-actions/setup-edge@v1
-      with:
-        edge-version: beta
+    - name: Install Microsoft Edge
+      run: |
+        curl -O https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_$(curl -s https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/ | grep -oP '(?<=href=")[^_]+[0-9]+\.[0-9]+\.[0-9]+[^"]+' | sort -V | tail -1)_amd64.deb
+        sudo dpkg -i microsoft-edge-dev*.deb
+        sudo apt-get install -f
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
