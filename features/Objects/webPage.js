@@ -1,5 +1,6 @@
 const { Builder } = require('selenium-webdriver');
 const firefox = require('selenium-webdriver/firefox');
+const edge = require('selenium-webdriver/edge');
 
 const edgeOptions = new edge.Options()
   .addArguments('--headless')
