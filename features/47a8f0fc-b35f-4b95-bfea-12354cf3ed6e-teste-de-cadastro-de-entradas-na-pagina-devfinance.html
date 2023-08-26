@@ -794,7 +794,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Passed
                             </p>
                         </td>
-                        <td class="percentage">100.00 %</td>
+                        <td class="percentage">0.00 %</td>
                     </tr>
                     <tr>
                         <td>
@@ -803,7 +803,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Failed
                             </p>
                         </td>
-                        <td class="percentage">0.00 %</td>
+                        <td class="percentage">100.00 %</td>
                     
                     
                     </tr>
@@ -873,12 +873,20 @@ input#darkCheck:checked ~ label>svg#moon {
                     
 
                     
-
+                        <li>
+                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
+                        </li>
                     
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">6</span>
+                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
                         </li>
                     
 
@@ -1020,8 +1028,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
                                         </div>
                                     
                                 
@@ -1042,6 +1050,8 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
+                                        <a href="#error0-3-error" data-toggle="collapse">+ Show Error</a>
+                                    
 
                                     
                                     
@@ -1056,6 +1066,18 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
+                            
+                                <div id="error0-3-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>UnexpectedAlertOpenError: Dismissed user prompt dialog: Por favor, preencha todos os campos
+    at Object.throwDecodedError (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/error.js:524:15)
+    at parseHttpResponse (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:601:13)
+    at Executor.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:529:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async thenableWebDriverProxy.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/webdriver.js:745:17)
+    at async DevFinanceHome.findElement (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/webPage.js:39:16)
+    at async DevFinanceHome.returnTotalValueOf (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/devFinance.js:44:31)
+    at async World.(anonymous) (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:41:32)</pre>
+                                </div>
                             
 
                             
@@ -1080,8 +1102,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -1140,8 +1162,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -1200,8 +1222,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -1282,12 +1304,20 @@ input#darkCheck:checked ~ label>svg#moon {
                     
 
                     
-
+                        <li>
+                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
+                        </li>
                     
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">6</span>
+                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
                         </li>
                     
 
@@ -1429,8 +1459,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
                                         </div>
                                     
                                 
@@ -1451,6 +1481,8 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
+                                        <a href="#error1-3-error" data-toggle="collapse">+ Show Error</a>
+                                    
 
                                     
                                     
@@ -1465,6 +1497,18 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
+                            
+                                <div id="error1-3-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>UnexpectedAlertOpenError: Dismissed user prompt dialog: Por favor, preencha todos os campos
+    at Object.throwDecodedError (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/error.js:524:15)
+    at parseHttpResponse (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:601:13)
+    at Executor.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:529:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async thenableWebDriverProxy.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/webdriver.js:745:17)
+    at async DevFinanceHome.findElement (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/webPage.js:39:16)
+    at async DevFinanceHome.returnTotalValueOf (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/devFinance.js:44:31)
+    at async World.(anonymous) (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:41:32)</pre>
+                                </div>
                             
 
                             
@@ -1489,8 +1533,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -1549,8 +1593,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -1609,8 +1653,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -1691,12 +1735,20 @@ input#darkCheck:checked ~ label>svg#moon {
                     
 
                     
-
+                        <li>
+                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
+                        </li>
                     
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">5</span>
+                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">1</span>
                         </li>
                     
 
@@ -1778,8 +1830,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
                                         </div>
                                     
                                 
@@ -1800,6 +1852,8 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
+                                        <a href="#error2-2-error" data-toggle="collapse">+ Show Error</a>
+                                    
 
                                     
                                     
@@ -1814,6 +1868,18 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
+                            
+                                <div id="error2-2-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>UnexpectedAlertOpenError: Dismissed user prompt dialog: Por favor, preencha todos os campos
+    at Object.throwDecodedError (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/error.js:524:15)
+    at parseHttpResponse (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:601:13)
+    at Executor.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/http.js:529:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async thenableWebDriverProxy.execute (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/node_modules/selenium-webdriver/lib/webdriver.js:745:17)
+    at async DevFinanceHome.findElement (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/webPage.js:39:16)
+    at async DevFinanceHome.registerEntrance (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/Objects/devFinance.js:28:9)
+    at async World.(anonymous) (/home/runner/work/SeleniumCucumberTest/SeleniumCucumberTest/features/step_definitions/devfinance.js:28:9)</pre>
+                                </div>
                             
 
                             
@@ -1871,8 +1937,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -1931,8 +1997,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -1991,8 +2057,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -2073,13 +2139,17 @@ input#darkCheck:checked ~ label>svg#moon {
                     
 
                     
-
+                        <li>
+                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">7</span>
+                        </li>
                     
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">7</span>
+                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
                         </li>
+                    
+
                     
 
                     
@@ -2100,8 +2170,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -2160,8 +2230,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -2253,8 +2323,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -2313,8 +2383,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -2373,8 +2443,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -2433,8 +2503,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -2493,8 +2563,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -2604,8 +2674,8 @@ input#darkCheck:checked ~ label>svg#moon {
                     ],
                     datasets: [{
                         data: [
-                            4,
                             0,
+                            4,
                             0,
                             0,
                             0,
